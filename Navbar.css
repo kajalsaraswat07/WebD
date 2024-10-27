@@ -1,0 +1,109 @@
+.navbar{
+    background: #14131a;
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+
+.logo{
+    object-fit: cover;
+    height: 4rem;
+    width: 5rem;
+
+}
+
+.nav-links-item{
+     margin: 1rem;
+     cursor: pointer;
+
+}
+
+.nav-links-item:hover{
+    color: lightblue;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid lightblue ;
+}
+
+.btn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: lightblue;
+
+}
+
+.btnImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+/*to activate the page*/
+.active{
+    color: lightblue;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid lightblue;
+}
+
+/*for making the website responsive */
+/*means three lines img on clicking gives the navbar*/
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(20,20,20);
+    border-radius: 1rem;
+}
+
+/*for menu items*/
+.Menu-item{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+
+/*to show that menu icon/image*/
+@media  screen and (max-width: 700px){
+    .mobMenu{
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+}
